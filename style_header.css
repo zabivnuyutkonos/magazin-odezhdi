@@ -1,0 +1,104 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+.main_header {
+    background-image: url(images/header_back.jpg);
+}
+
+.about_header {
+    background-image: url(images/about_header_back.jpg);
+}
+
+.contacts_header {
+    background-image: url(images/contacts_header_back.jpg);
+}
+
+.shop_header {
+    background-image: url(images/shop_header_back.jpg);
+}
+
+.header1 {
+    height: 100vh;
+}
+
+.header2 {
+    height: 60vh;
+}
+
+header {
+    grid-column: 1/5;
+    background-size: cover;
+}
+
+.back {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    color: white;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    height: 100%;
+}
+
+nav a .logo {
+    height: 100%;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.menu li {
+    padding: 1em 2em;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.banner h1 {
+    font-size: 42px;
+}
+
+.banner p {
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    padding: 50px 0;
+}
+
+.button {
+    color: black;
+    background-color: rgb(255, 190, 69);
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgb(241, 241, 241);
+}
+
+.menu li a:hover {
+    color: rgb(255, 190, 69);
+    transition: 0.9s;
+}
+
+.button:hover {
+    background-color: rgb(207, 135, 0);
+    box-shadow: 0 0 15px 0 rgb(241, 241, 241);
+    transition: 0.9s;
+}
+
